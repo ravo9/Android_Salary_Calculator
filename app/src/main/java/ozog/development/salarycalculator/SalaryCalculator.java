@@ -38,4 +38,13 @@ public class SalaryCalculator extends AppCompatActivity {
     public double hourToYear( float hourRate, int hourAmount ) {
         return ( hourRate * hourAmount * 52.143);
     }
+
+    public void calculateAll() {
+        double weekSalary = hourToWeek( Float.parseFloat(hoursAmount.getText().toString()), Integer.parseInt(hourRate.getText().toString()) );
+        double monthSalary = hourToMonth( Float.parseFloat(hoursAmount.getText().toString()), Integer.parseInt(hourRate.getText().toString()) );
+        double yearSalary = hourToYear( Float.parseFloat(hoursAmount.getText().toString()), Integer.parseInt(hourRate.getText().toString()) );
+
+        String salaryPerWeekRightSide = salaryPerWeek.getText().toString().substring( 5 );
+        salaryPerWeek.setText( salaryPerWeekRightSide );
+    }
 }
