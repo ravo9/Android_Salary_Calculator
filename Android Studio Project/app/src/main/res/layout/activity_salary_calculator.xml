@@ -41,17 +41,19 @@
         android:layout_marginTop="10dp"
         android:ems="10"
         android:inputType="numberDecimal"
+        android:textAlignment="center"
         android:textColor="@android:color/background_light" />
 
     <EditText
         android:id="@+id/hoursAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/hourRate"
         android:layout_below="@+id/textView1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="11dp"
         android:ems="10"
         android:inputType="number"
+        android:textAlignment="center"
         android:textColor="@android:color/background_light" />
 
     <TextView
