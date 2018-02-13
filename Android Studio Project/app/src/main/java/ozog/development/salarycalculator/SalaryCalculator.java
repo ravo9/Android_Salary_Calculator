@@ -48,10 +48,8 @@ public class SalaryCalculator extends AppCompatActivity {
         monthSalary = Math.round(monthSalary * 100.0) / 100.0;
         yearSalary = Math.round(yearSalary * 100.0) / 100.0;
 
-        String salaryResultRightSide = " per week";
-
-        salaryPerWeek.setText( ( "$" + Double.toString( weekSalary ) + salaryResultRightSide ) );
-        salaryPerMonth.setText( ( "$" + Double.toString( monthSalary ) + salaryResultRightSide ) );
-        salaryPerYear.setText( ( "$" + Double.toString( yearSalary ) + salaryResultRightSide ) );
+        salaryPerWeek.setText( ( "$" + Double.toString( weekSalary ) + " per week" ) );
+        salaryPerMonth.setText( ( "$" + Double.toString( monthSalary ) + " per month" ) );
+        salaryPerYear.setText( ( "$" + Double.toString( yearSalary ) + " per year" ) );
     }
 }
