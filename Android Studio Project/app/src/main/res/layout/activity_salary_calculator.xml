@@ -107,7 +107,7 @@
         android:layout_below="@+id/hourRate"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:text="Calculate"
-        android:onClick="calculateAll"/>
+        android:onClick="calculateAll"
+        android:text="Calculate" />
 
 </RelativeLayout>
